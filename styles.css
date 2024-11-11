@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1C1C1C;
+  background-color: #FFFFFF;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #4A4A4A;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navigation a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.cta .btn {
+  background-color: #47A6A6;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.contact-info {
+  font-size: 0.9em;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.banner-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.banner h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+}
+
+.banner p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+/* Main Content */
+main {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  color: #4A4A4A;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+section .btn {
+  background-color: #47A6A6;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+section .btn:hover {
+  background-color: #6A7FDB;
+}
+
+/* Footer */
+footer {
+  background-color: #4A4A4A;
+  color: #FFFFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.footer-nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-contact {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-info {
+    margin-top: 10px;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+
+  main {
+    padding: 20px 0;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.8em;
+  }
+
+  .banner p {
+    font-size: 0.9em;
+  }
+
+  .cta .btn, section .btn {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
