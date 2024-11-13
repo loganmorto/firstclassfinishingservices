@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 220 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-81.2564,-963.99)">
+        <g id="logo-" serif:id="logo?" transform="matrix(0.823014,0,0,0.823014,-267.525,780.643)">
+            <g transform="matrix(0.545455,0,0,0.562478,209.091,130.134)">
+                <rect x="460" y="276.863" width="22" height="121.137" style="stroke:black;stroke-width:0.11px;"/>
+            </g>
+            <g id="ball">
+                <g transform="matrix(1,0,0,1,1.00994,0)">
+                    <circle cx="464.99" cy="264.99" r="20.99" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                </g>
+                <g>
+                    <path d="M466,244L466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                    <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                    <g transform="matrix(-1,0,0,1,932,0)">
+                        <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                    </g>
+                </g>
+                <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,201.01,730.99)">
+                    <path d="M466,244L466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                    <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                    <g transform="matrix(-1,0,0,1,932,0)">
+                        <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
+                    </g>
+                </g>
+            </g>
+            <g id="light">
+                <path d="M493,264.99L507,264.99" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+                <path d="M485.092,245.898L494.991,235.999" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+                <path d="M466,237.99L466,223.99" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+                <path d="M446.908,245.898L437.009,235.999" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+                <path d="M439,264.99L425,264.99" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+                <path d="M446.908,284.082L437.009,293.981" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+                <path d="M485.092,284.082L494.991,293.981" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-438.256,1066.34)">
+            <g transform="matrix(1,0,0,1,-43.527,-350)">
+                <g transform="matrix(36,0,0,36,720.639,275.66)">
+                </g>
+                <text x="640.323px" y="275.66px" style="font-family:'Raleway-Regular', 'Raleway';font-size:36px;">First</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-114.356,-410)">
+                <g transform="matrix(36,0,0,36,801.728,372.26)">
+                </g>
+                <text x="712.844px" y="372.26px" style="font-family:'Raleway-Regular', 'Raleway';font-size:36px;">Class</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-185.601,-272)">
+                <g transform="matrix(36,0,0,36,927.945,269.623)">
+                </g>
+                <text x="782.397px" y="269.623px" style="font-family:'Raleway-Regular', 'Raleway';font-size:36px;">Finis<tspan x="855.873px " y="269.623px ">h</tspan>ing</text>
+            </g>
+        </g>
+    </g>
+</svg>
