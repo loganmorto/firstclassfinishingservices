@@ -7,15 +7,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #1C1C1C;
-  background-color: #FFFFFF;
+  color: #000000;
+  background-color: #D3D3D3;
 }
 
 /* Container */
 .container {
   width: 90%;
   max-width: 1200px;
+  display: flex;
   margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
 }
 
 /* Header */
@@ -23,20 +27,35 @@ header {
   background-color: black;
   padding: 15px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .logo img {
   max-width: 250px;
-  min-width: 150px;
+  min-width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.logo {
+ display: contents;
+}
+
+.logo img:hover {
+  transform: scale(1.05) translate(-2px, -2px);
 }
 
 .menu_container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  gap: 1em;
 }
 
 nav {
@@ -62,16 +81,36 @@ nav {
 }
 
 .cta .btn {
-  background-color: #47A6A6;
+  background-color: #333333;
   color: #FFFFFF;
   padding: 10px 20px;
-  border-radius: 8px;
+
+  box-shadow: 0 4px 8px 0 rgba(255, 130, 0, 0.5);
   text-decoration: none;
+  background-color: transparent; /* Makes the background transparent */
+  border: 1.5px solid transparent; /* Border width */
+
+  background-image: linear-gradient(#FF8200, #ffaf59), /* For the border */
+                    linear-gradient(135deg, #FFE5B4, #FF8200); /* Button background */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
+
+
+.btn:hover {
+  padding: 12px 22px; /* Optional hover effect */
+}
+
 
 .contact-info {
   font-size: 0.9em;
   text-align: right;
+  display: flex;
+  justify-content: right;
+  width: 90%;
+  max-width: 1200px;
 }
 
 /* Banner */
@@ -79,31 +118,49 @@ nav {
   position: relative;
   text-align: center;
   color: #FFFFFF;
+  text-align: left;
 }
 
+.banner-text p {
+  color: #FF8200;
+  
+  
+}
 .banner-img {
   width: 100%;
-  height: 300px;
+  height: 600px;
   object-fit: cover;
   opacity: 0.8;
 }
 
 .banner-text {
   position: absolute;
+  color: #FF8200;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  /* text-shadow: 1px 1px 5px rgb(0, 0, 0); */
+  margin: 0 5%;
+  
 }
 
 .banner h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.5em;
+  font-size: 4em;
+  background-color: #0000007f;
+  width: fit-content;
+  padding: 15px;
 }
 
 .banner p {
-  margin-top: 10px;
+padding: 15px;
+padding-top: 16px;
+margin-top: -1px;
+
   font-size: 1.2em;
+  background-color: #0000007f;
+  width: fit-content;
 }
 
 /* Main Content */
@@ -127,11 +184,14 @@ section p {
 }
 
 section .btn {
-  background-color: #47A6A6;
+  background-color: #333333;
   color: #FFFFFF;
   padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #FF8200;
 }
 
 section .btn:hover {
@@ -148,6 +208,7 @@ footer {
 
 .footer-logo img {
   max-width: 100px;
+  min-width: 100px;
 }
 
 .footer-nav ul {
