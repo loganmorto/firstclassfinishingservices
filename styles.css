@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-  background-color: #4A4A4A;
+  background-color: black;
   padding: 15px 0;
   display: flex;
   align-items: center;
@@ -29,7 +29,20 @@ header {
 }
 
 .logo img {
-  max-width: 150px;
+  max-width: 250px;
+  min-width: 150px;
+}
+
+.menu_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
 .navigation ul {
@@ -58,6 +71,7 @@ header {
 
 .contact-info {
   font-size: 0.9em;
+  text-align: right;
 }
 
 /* Banner */

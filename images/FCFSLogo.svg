@@ -1,55 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 220 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1,0,0,1,-81.2564,-963.99)">
-        <g id="logo-" serif:id="logo?" transform="matrix(0.823014,0,0,0.823014,-267.525,780.643)">
-            <g transform="matrix(0.545455,0,0,0.562478,209.091,130.134)">
-                <rect x="460" y="276.863" width="22" height="121.137" style="stroke:black;stroke-width:0.11px;"/>
+<svg width="100%" height="100%" viewBox="0 0 1760 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Main-logo" serif:id="Main logo">
+    </g>
+    <g transform="matrix(1,0,0,1,-347.101,-209.136)">
+        <g id="logo" transform="matrix(0.45422,0,0,0.45422,341.44,279.617)">
+            <g transform="matrix(1,0,0,2.17683,-2.02671e-13,-684.636)">
+                <path d="M750,554L750,599.938L200,599.938L200,554L750,554ZM716.976,569.171C716.976,569.171 347.007,569.171 233.024,569.171L233.024,584.768C233.024,584.768 716.976,584.768 716.976,584.768L716.976,569.171Z" style="fill:rgb(255,130,0);"/>
             </g>
-            <g id="ball">
-                <g transform="matrix(1,0,0,1,1.00994,0)">
-                    <circle cx="464.99" cy="264.99" r="20.99" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                </g>
-                <g>
-                    <path d="M466,244L466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                    <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                    <g transform="matrix(-1,0,0,1,932,0)">
-                        <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                    </g>
-                </g>
-                <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,201.01,730.99)">
-                    <path d="M466,244L466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                    <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                    <g transform="matrix(-1,0,0,1,932,0)">
-                        <path d="M466,244C466,244 478,248.993 478,264.99C478,280.987 466,285.98 466,285.98" style="fill:none;stroke:black;stroke-width:3.65px;"/>
-                    </g>
-                </g>
+            <g transform="matrix(1,0,0,2.17683,-2.02671e-13,-584.636)">
+                <path d="M236.923,560.878L713.077,560.878C656.897,571.769 553.931,593.546 530,611.063C502.465,631.218 555,676.623 550,700.392C545,724.162 500,753.681 500,753.681L450,753.681C450,753.681 405,724.162 400,700.392C395,676.623 447.535,631.218 420,611.063C396.069,593.546 293.103,571.769 236.923,560.878ZM378.68,576.048C385.828,578.02 392.669,580.011 399.061,582.003C421.643,589.041 438.968,596.409 447.971,602.999C462.681,613.766 463.528,629.833 455.78,647.384C447.754,665.563 430.104,685.78 432.871,698.933C435.858,713.136 455.704,729.627 467.758,738.51C467.758,738.51 482.242,738.51 482.242,738.51C494.296,729.627 514.142,713.136 517.129,698.933C519.896,685.78 502.246,665.563 494.22,647.384C486.472,629.833 487.319,613.766 502.029,602.999C511.032,596.409 528.357,589.041 550.939,582.003C557.331,580.011 564.171,578.02 571.321,576.048L378.68,576.048Z" style="fill:rgb(255,130,0);"/>
             </g>
-            <g id="light">
-                <path d="M493,264.99L507,264.99" style="fill:none;stroke:black;stroke-width:2.43px;"/>
-                <path d="M485.092,245.898L494.991,235.999" style="fill:none;stroke:black;stroke-width:2.43px;"/>
-                <path d="M466,237.99L466,223.99" style="fill:none;stroke:black;stroke-width:2.43px;"/>
-                <path d="M446.908,245.898L437.009,235.999" style="fill:none;stroke:black;stroke-width:2.43px;"/>
-                <path d="M439,264.99L425,264.99" style="fill:none;stroke:black;stroke-width:2.43px;"/>
-                <path d="M446.908,284.082L437.009,293.981" style="fill:none;stroke:black;stroke-width:2.43px;"/>
-                <path d="M485.092,284.082L494.991,293.981" style="fill:none;stroke:black;stroke-width:2.43px;"/>
+            <g id="Main-logo1" serif:id="Main logo" transform="matrix(1,0,0,1,0,-93.6714)">
+                <g transform="matrix(1,0,0,1,12.625,10)">
+                    <rect x="317.75" y="540" width="39.25" height="50" style="fill:rgb(255,130,0);"/>
+                </g>
+                <path d="M200,386.541L200,192L250,192L250,357.396L350,299.938L500,386.541L500,444.276L450,415.697L350,357.673L250.336,415.214L250,550.438L250,599.938L200,599.938L200,444.276L125,487.577L125,429.842L200,386.541Z" style="fill:rgb(255,130,0);"/>
+                <g transform="matrix(1,3.46945e-18,-3.46945e-18,1,0.5,0.330127)">
+                    <path d="M434.5,114.346L225,235.301L200,192L434.5,56.611L434.5,114.346Z" style="fill:rgb(255,130,0);"/>
+                </g>
+                <path d="M750,436L750,599.938L500,600L500,599.938L450,599.938L450,430.697L500,459.276L500,550L700,550L700,436L750,436Z" style="fill:rgb(255,130,0);"/>
+                <path d="M700,250.354L500,134.884L500,371.541L450,342.673L450,48.281L750,221.486L750,336L700,336L700,250.354Z" style="fill:rgb(255,130,0);"/>
             </g>
         </g>
-        <g transform="matrix(1,0,0,1,-438.256,1066.34)">
-            <g transform="matrix(1,0,0,1,-43.527,-350)">
-                <g transform="matrix(36,0,0,36,720.639,275.66)">
+        <g id="words" transform="matrix(1,0,0,1,159.641,45.5113)">
+            <g transform="matrix(1,0,0,1,-202.352,-277.8)">
+                <g transform="matrix(64,0,0,64,2072.25,844.782)">
                 </g>
-                <text x="640.323px" y="275.66px" style="font-family:'Raleway-Regular', 'Raleway';font-size:36px;">First</text>
+                <text x="873.872px" y="844.782px" style="font-family:'Roboto-Regular', 'Roboto';font-size:64px;fill:rgb(255,130,0);">F<tspan x="973.247px 1054.65px 1164.28px 1245.68px 1347.65px 1457.28px 1538.68px 1648.31px 1755.9px 1835.75px 1934.18px 2030.59px " y="844.782px 844.782px 844.782px 844.782px 844.782px 844.782px 844.782px 844.782px 844.782px 844.782px 844.782px 844.782px ">INISHING LLC</tspan></text>
             </g>
-            <g transform="matrix(1,0,0,1,-114.356,-410)">
-                <g transform="matrix(36,0,0,36,801.728,372.26)">
+            <g transform="matrix(1,0,0,1,-7.55223,10.3742)">
+                <g transform="matrix(1,0,0,1,401.998,-330.721)">
+                    <g transform="matrix(156,0,0,156,1507.2,791.69)">
+                    </g>
+                    <text x="873.686px" y="791.69px" style="font-family:'Raleway-Regular', 'Raleway';font-size:156px;fill:rgb(255,130,0);">C<tspan x="1016.27px 1142.79px 1282.25px 1412.51px " y="791.69px 791.69px 791.69px 791.69px ">LASS</tspan></text>
                 </g>
-                <text x="712.844px" y="372.26px" style="font-family:'Raleway-Regular', 'Raleway';font-size:36px;">Class</text>
-            </g>
-            <g transform="matrix(1,0,0,1,-185.601,-272)">
-                <g transform="matrix(36,0,0,36,927.945,269.623)">
+                <g transform="matrix(2.83138,0,0,2.83138,-1672.26,-1789.57)">
+                    <g transform="matrix(55.0968,0,0,55.0968,1016.39,794.745)">
+                    </g>
+                    <text x="817.049px" y="794.745px" style="font-family:'Raleway-Regular', 'Raleway';font-size:55.097px;fill:rgb(255,130,0);">F<tspan x="862.063px 888.289px 936.829px 982.78px " y="794.745px 794.745px 794.745px 794.745px ">IRST</tspan></text>
                 </g>
-                <text x="782.397px" y="269.623px" style="font-family:'Raleway-Regular', 'Raleway';font-size:36px;">Finis<tspan x="855.873px " y="269.623px ">h</tspan>ing</text>
             </g>
         </g>
     </g>
