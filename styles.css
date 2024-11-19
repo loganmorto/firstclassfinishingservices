@@ -113,6 +113,10 @@ nav {
   max-width: 1200px;
 }
 
+.contact-info a {
+  color: white;
+}
+
 /* Banner */
 .banner {
   position: relative;
@@ -145,6 +149,53 @@ nav {
   /* margin: 0 5%; */
   
 }
+
+/* Default Button with Gradient Colors */
+.banner-cta {
+  font-size: 1.2em;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  /* Gradient Background */
+  background-image: linear-gradient(#FF8200, #ffaf59); /* Gradient colors */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  box-shadow: 0 4px 8px 0 rgba(255, 130, 0, 0.5);
+}
+
+.banner-cta:hover {
+  padding: 12px 22px;
+  background-image: linear-gradient(#CC6A00, #E69545); /* Darkened gradient */
+  box-shadow: 0 4px 8px 0 rgba(204, 106, 0, 0.6); /* Slightly darker shadow */
+}
+
+/* Alternate Button with Blurred and Darkened Background */
+.banner-cta-alt {
+  font-size: 1.2em;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.5); /* Subtle border */
+  border-radius: 8px;
+  transition: all 0.7s ease;
+
+  /* Blurred and Darkened Background */
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  backdrop-filter: blur(10px); /* Applies blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.banner-cta-alt:hover {
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker on hover */
+}
+
 
 .banner h1 {
   font-family: 'Raleway', sans-serif;
