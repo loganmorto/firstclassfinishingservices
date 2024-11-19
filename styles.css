@@ -136,12 +136,13 @@ nav {
 .banner-text {
   position: absolute;
   color: #FF8200;
-  width: 100%;
+  width: 90%;
+  max-width: 1200px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* text-shadow: 1px 1px 5px rgb(0, 0, 0); */
-  margin: 0 5%;
+  /* margin: 0 5%; */
   
 }
 
@@ -246,10 +247,12 @@ footer {
 
   .banner h1 {
     font-size: 2em;
+    width: fit-content;
   }
 
   .banner p {
     font-size: 1em;
+    width: fit-content;
   }
 
   main {
