@@ -14,15 +14,21 @@
       <span>Email: <a href="mailto:fcfinishing1@gmail.com">fcfinishing1@gmail.com</a> | 
       Phone: <a href="tel:8652087191">865-208-7191</a></span>
     </div>
-    
+  
     <div class="container">
       <div class="logo">
         <a href="index.html">
-        <img src="images/FCFSLogo.svg" alt="First Class Finishing LLC Logo" />
-      </a>
+          <img src="images/FCFSLogo.svg" alt="First Class Finishing LLC Logo" />
+        </a>
       </div>
-      
-      <div class="menu_container">
+  
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  
       <nav class="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -35,8 +41,6 @@
           <a href="contact.html" class="btn">Get a Quote</a>
         </div>
       </nav>
-
-    </div>
     </div>
   </header>
 
@@ -124,3 +128,14 @@
 
 </body>
 </html>
+
+<script>
+  // Select the hamburger button and navigation menu
+  const hamburger = document.querySelector('.hamburger');
+  const navigation = document.querySelector('.navigation');
+
+  // Toggle the navigation menu when the hamburger button is clicked
+  hamburger.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+  });
+</script>

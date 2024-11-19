@@ -33,7 +33,7 @@ header {
   color: #FFFFFF;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .logo img {
@@ -58,6 +58,7 @@ header {
   gap: 1em;
 }
 
+
 nav {
   list-style: none;
   display: flex;
@@ -79,6 +80,8 @@ nav {
 .navigation a:hover {
   text-decoration: underline;
 }
+
+
 
 .cta .btn {
   background-color: #333333;
@@ -128,7 +131,6 @@ nav {
 .banner-text p {
   color: #FF8200;
   
-  
 }
 .banner-img {
   width: 100%;
@@ -145,9 +147,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* text-shadow: 1px 1px 5px rgb(0, 0, 0); */
-  /* margin: 0 5%; */
-  
+
 }
 
 /* Default Button with Gradient Colors */
@@ -209,7 +209,7 @@ nav {
 padding: 15px;
 
 
-  font-size: 1.2em;
+  font-size: x-large;
   background-color: #0000007f;
   width: fit-content;
 }
@@ -287,6 +287,10 @@ footer {
     text-align: center;
   }
 
+  .cta {
+    width: 90%;
+  }
+
   .navigation ul {
     flex-direction: column;
     gap: 10px;
@@ -314,12 +318,36 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
+
+  .cta .btn {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px 20px;
+  
+    box-shadow: 0 4px 8px 0 rgba(255, 130, 0, 0.5);
+    text-decoration: none;
+    background-color: transparent; /* Makes the background transparent */
+    border: 1.5px solid transparent; /* Border width */
+  
+    background-image: linear-gradient(#FF8200, #ffaf59), /* For the border */
+                      linear-gradient(135deg, #FFE5B4, #FF8200); /* Button background */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
   .banner h1 {
     font-size: 1.8em;
   }
+
+  .cta {
+  width: 90%;
+}
 
   .banner p {
     font-size: 0.9em;
@@ -328,5 +356,106 @@ footer {
   .cta .btn, section .btn {
     padding: 8px 15px;
     font-size: 0.9em;
+  }
+
+  .cta .btn {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 10px 20px;
+  
+    box-shadow: 0 4px 8px 0 rgba(255, 130, 0, 0.5);
+    text-decoration: none;
+    background-color: transparent; /* Makes the background transparent */
+    border: 1.5px solid transparent; /* Border width */
+  
+    background-image: linear-gradient(#FF8200, #ffaf59), /* For the border */
+                      linear-gradient(135deg, #FFE5B4, #FF8200); /* Button background */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+  }
+}
+
+
+/* Hamburger Button Styles */
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Navigation Menu - Hidden by Default on Mobile */
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.navigation.active {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #FFFFFF;
+  z-index: 10;
+}
+
+.navigation ul li {
+  margin: 10px 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navigation {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+  }
+
+  .navigation.active {
+    display: flex; /* Displayed when active */
   }
 }
