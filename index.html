@@ -5,44 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Class Finishing LLC</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/FCFSfavicon.svg" type="image/x-icon">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="contact-info">
-      <span>Email: <a href="mailto:fcfinishing1@gmail.com">fcfinishing1@gmail.com</a> | 
-      Phone: <a href="tel:8652087191">865-208-7191</a></span>
+<!-- Header -->
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/FCFSLogo.svg" alt="First Class Finishing LLC Logo" />
+      </a>
     </div>
-  
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/FCFSLogo.svg" alt="First Class Finishing LLC Logo" />
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+      <!-- Desktop Version -->
+      <span class="desktop-contact">
+        <a href="mailto:fcfinishing1@gmail.com">
+          <img src="images/mail.svg" alt="Email Icon"> Email
+        </a> |
+        <a href="tel:8652087191">
+          <img src="images/phone.svg" alt="Phone Icon"> Call
+        </a>
+      </span>
+      <!-- Mobile Version -->
+      <div class="mobile-contact">
+        <a href="mailto:fcfinishing1@gmail.com">
+          <img src="images/mail.svg" alt="Email Icon">
+        </a>
+        <a href="tel:8652087191">
+          <img src="images/phone.svg" alt="Phone Icon">
         </a>
       </div>
-  
-      <!-- Hamburger Button -->
-      <button class="hamburger" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-  
-      <nav class="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="cta">
-          <a href="contact.html" class="btn">Get a Quote</a>
-        </div>
-      </nav>
     </div>
-  </header>
+    <div class="cta">
+      <a href="contact.html" class="btn">Get a Quote</a>
+    </div>
+
+    <!-- Hamburger Button -->
+    <button class="hamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+  </div>
+</header>
+
 
 <!-- Banner -->
 <section class="banner">
@@ -51,7 +68,7 @@
     <h1>Transform Your Space </br> with First Class Craftsmanship</h1>
     <p>Exceptional remodeling services tailored to exceed your expectations.</p>
     <div class="banner-cta-buttons">
-      <a href="tel:8652087191" class="banner-cta-alt">Call Us Now</a>
+      <a href="tel:8652087191" class="banner-cta-alt">Call Now</a>
       <a href="contact.html" class="banner-cta">Get a Quote</a>
     </div>
   </div>
