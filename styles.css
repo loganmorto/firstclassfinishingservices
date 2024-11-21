@@ -419,7 +419,7 @@ footer {
     transition: all 0.3s ease;
     border-radius: 8px;
     width: 100%;
-    display: block;
+    display: none;
   }
 
   .banner h1 {
