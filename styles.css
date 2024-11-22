@@ -213,6 +213,7 @@ nav {
 .banner-cta-buttons {
   display: flex;
   gap: 2rem;
+  
 }
 
 .banner-cta:hover {
@@ -331,6 +332,7 @@ footer {
   header {
     flex-direction: column;
     text-align: center;
+    padding: 0;
   }
 
   .cta {
@@ -425,6 +427,21 @@ footer {
 
   .banner h1 {
     padding-bottom: 0;
+  }
+
+  .banner-cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .banner-cta-alt {
+    display: flex;
+    justify-content: center;
+  }
+
+  .banner-cta {
+    display: flex;
+    justify-content: center;
   }
 }
 
