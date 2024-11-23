@@ -285,7 +285,9 @@ section p {
 
 section .btn {
   background-color: #333333;
+  text-align: center;
   display: flex;
+  justify-content: center;
   width: fit-content;
   font-size: 16px;
   color: #FFFFFF;
@@ -458,6 +460,8 @@ flex-wrap: wrap;
 
 .service-text {
   color: white;
+  line-height: 1.75em;
+  padding: 0 1.25em;
 }
 
 .service-h3 {
@@ -623,6 +627,12 @@ flex-wrap: wrap;
 
   .navigation a {
     text-decoration: underline;
+  }
+
+  .service-text {
+    color: white;
+    line-height: 1.75em;
+    padding: 0;
   }
 }
 
