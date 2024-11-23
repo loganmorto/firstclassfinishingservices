@@ -8,7 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #000000;
-  background-color: #D3D3D3;
+  background-color: #ffffff;
 }
 
 /* Container */
@@ -285,6 +285,9 @@ section p {
 
 section .btn {
   background-color: #333333;
+  display: flex;
+  width: fit-content;
+  font-size: 16px;
   color: #FFFFFF;
   padding: 10px 20px;
   border-radius: 8px;
@@ -393,6 +396,82 @@ footer {
 .navigation a:hover {
   text-decoration: underline;
 }
+
+
+
+/* services section */
+.services {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.service-item-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.service-items-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.service-item-container img {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100px;
+  max-height: 500px;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.service-item {
+  min-width: 46%;
+  padding: 2rem 3rem;
+  margin: .5rem;
+  background-image: linear-gradient(160deg,#140a00, #ff942a);
+  border-radius: 2rem;
+  box-shadow: 0 8px 16px 8px rgba(255, 130, 0, 0.5);
+
+}
+
+.services-text {
+  width: 100%;
+  padding-bottom: 1rem;
+
+}
+
+.service-item-text p {
+  font-size: 16px;
+  padding-bottom: 1rem;
+  line-height: 1.5em;
+}
+
+.service-text {
+  color: white;
+}
+
+.service-h3 {
+  color: white;
+}
+
+.service-item-text {
+
+}
+
+.service-icon {
+  font-size: larger;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -545,4 +624,10 @@ footer {
   .navigation a {
     text-decoration: underline;
   }
+}
+
+@media (max-width: 366px) {
+  .contact-info{
+    display: none;
+  } 
 }
