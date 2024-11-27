@@ -546,11 +546,7 @@ line-height: 2em;
 .testimonials p {
   font-size: large;
   line-height: 1.7em;
-  background-color: #4A4A4A;
-  color: white;
   padding: 2em;
-  border-radius: 24px;
-  box-shadow: 0 4px 8px 4px #4A4A4A;
 }
 
 
@@ -753,8 +749,16 @@ line-height: 2em;
     padding: 0;
   }
 
+  .service-item {
+    padding: 1em;
+  }
+
   .footer-container {
     padding-bottom: .5em;
+  }
+
+  .testimonials p {
+    padding: 0;
   }
 }
 
