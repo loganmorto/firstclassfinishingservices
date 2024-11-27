@@ -157,11 +157,12 @@ nav {
 
 /* Banner */
 .banner {
+  overflow: hidden;
   position: relative;
   text-align: center;
   color: #FFFFFF;
   text-align: left;
-  
+  max-height: 600px;
 }
 
 .banner-text p {
@@ -258,10 +259,15 @@ nav {
 }
 
 .banner p {
-
   font-size: x-large;
+}
 
-  width: fit-content;
+.banner-tag {
+  text-align: center;
+  background-color: #000000;
+  color: #FF8200;
+  padding: 1em;
+  font-size: large;
 }
 
 
@@ -592,7 +598,6 @@ line-height: 2em;
 
   .banner p {
     font-size: 1em;
-    width: fit-content;
   }
 
   main {
