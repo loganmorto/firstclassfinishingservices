@@ -273,6 +273,19 @@ nav {
   font-size: large;
 }
 
+.warranty-clipping {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size:xx-small ;
+
+}
+.warranty-clipping img {
+max-width: min(50%, 600px);
+padding: 2em 2em 0 2em;;
+}
+
 
 /* Main Content */
 main {
