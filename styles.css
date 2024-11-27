@@ -278,18 +278,20 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size:xx-small ;
+  font-size: 1rem;
+  margin: 5em 0;
 
 }
 .warranty-clipping img {
 max-width: min(50%, 600px);
+min-width: 300px;
 padding: 2em 2em 0 2em;;
 }
 
 
 /* Main Content */
 main {
-  padding: 40px 0;
+
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -670,6 +672,10 @@ line-height: 2em;
 
   .footer-container {
     padding-bottom: 1.5em;
+  }
+
+  .warranty-clipping{
+    font-size: .75em;
   }
 }
 
