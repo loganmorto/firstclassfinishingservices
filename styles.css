@@ -280,7 +280,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  overflow-x: hidden;
+
 }
 
 section h2 {
