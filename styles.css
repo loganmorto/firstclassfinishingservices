@@ -49,6 +49,10 @@ header {
  display: contents;
 }
 
+.logo a {
+  display: flex;
+}
+
 .logo img:hover {
   transform: scale(1.05) translate(-2px, -2px);
 }
@@ -121,7 +125,7 @@ nav {
   max-width: 1200px;
   align-items: center;
   gap: 10px;
-  margin-bottom: -.4em;
+
 }
 
 .contact-info .desktop-contact {
@@ -527,7 +531,7 @@ line-height: 2em;
 
 /* Testimonials Section */
 .testimonials {
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 24px;
   display: flex;
   align-items: center;
