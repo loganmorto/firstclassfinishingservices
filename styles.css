@@ -527,7 +527,7 @@ line-height: 2em;
 
 /* Testimonials Section */
 .testimonials {
-  padding: 2rem 3rem;
+  padding: 2rem;
   border-radius: 24px;
   display: flex;
   align-items: center;
@@ -550,15 +550,40 @@ line-height: 2em;
 }
 
 
+/* areas served */
+.areas-served {
+  list-style-position: inside;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Container for the list */
+.two-column-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds spacing between columns */
+}
+
+/* Each column takes up half of the available width */
+.two-column-list li {
+  flex: 1 1 calc(50% - 20px); /* Flexbox magic: two columns with gap */
+  text-align: center;
+
+}
+
+
+
 
 /* About Us */
 .about {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  text-align: center;
+
   align-items: center;
-  padding: 4em 3em;
+  padding: 3em 3em;
   max-width: 1000px;
   border: black solid medium;
   border-radius: 24px;
@@ -569,6 +594,7 @@ line-height: 2em;
 .about h2, .about p {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .about p {
@@ -584,7 +610,7 @@ line-height: 2em;
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  gap: 3em;
+  gap: 4em;
 }
 
 
@@ -673,6 +699,8 @@ line-height: 2em;
   .warranty-clipping{
     font-size: .75em;
   }
+
+
 }
 
 @media (max-width: 480px) {
@@ -759,6 +787,14 @@ line-height: 2em;
 
   .testimonials p {
     padding: 0;
+  }
+
+  .about { 
+    padding: 2em;
+  }
+
+  .two-column-list li {
+    flex: 1 1 100%; /* Full-width on smaller screens */
   }
 }
 
