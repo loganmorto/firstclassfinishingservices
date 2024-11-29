@@ -289,13 +289,12 @@ nav {
 .warranty-clipping img {
 max-width: min(50%, 600px);
 min-width: 300px;
-padding: 2em 2em 0 2em;;
+padding: 0 2em;;
 }
 
 
 /* Main Content */
 main {
-
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -467,7 +466,8 @@ flex-wrap: wrap;
 }
 
 .service-items-container {
-  display: flex;
+  display: grid;
+grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
@@ -612,6 +612,7 @@ line-height: 2em;
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 2em;
   align-items: center;
   justify-content: space-between;
   gap: 4em;
