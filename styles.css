@@ -355,6 +355,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-container  .contact-info  .desktop-contact a {
+  color: #000000;
+}
+
 .footer-contact {
   font-size: 0.9em;
 }
