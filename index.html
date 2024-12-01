@@ -19,7 +19,7 @@
     <!-- Desktop Version -->
     <span class="desktop-contact">
       <a href="mailto:fcfinishing1@gmail.com">
-        <img src="images/mail.svg" alt="Email Icon"> Email
+        <img src="images/mailWhite.svg" alt="Email Icon"> Email
       </a> |
       <a href="tel:8652087191">
         Call Us: 865-208-7191
@@ -29,7 +29,7 @@
   <div class="container">
     <div class="logo">
       <a href="index.html">
-        <img src="images/FCFSLogo.svg" alt="First Class Finishing LLC Logo" />
+        <img src="images/FCFSLogoWhite.svg" alt="First Class Finishing LLC Logo" />
       </a>
     </div>
     <nav class="navigation">
@@ -45,15 +45,15 @@
       <!-- Mobile Version -->
       <div class="mobile-contact">
         <a href="mailto:fcfinishing1@gmail.com">
-          <img src="images/mail.svg" alt="Email Icon">
+          <img src="images/mailWhite.svg" alt="Email Icon">
         </a>
         <a href="tel:8652087191">
-          <img src="images/phone.svg" alt="Phone Icon">
+          <img src="images/phoneWhite.svg" alt="Phone Icon">
         </a>
       </div>
     </div>
     <div class="cta">
-      <a href="contact.html" class="btn">Get a Quote</a>
+      <a href="#contact-form" class="btn">Get a Quote</a>
     </div>
 
     <!-- Hamburger Button -->
@@ -189,7 +189,7 @@
 <section class="contact-form-section">
   <h2>Get a Free Quote</h2>
   <p>Fill out the form below, and we'll get back to you as soon as possible.</p>
-  <form action="https://formspree.io/f/mvgovzpg" method="POST" class="contact-form">
+  <form action="https://formspree.io/f/mvgovzpg" method="POST" class="contact-form" id="contact-form">
     <!-- Honeypot Field -->
     <input type="text" name="honeypot" id="honeypot">
 
@@ -214,7 +214,7 @@
     </div>
 
     <div class="form-group">
-      <label for="Address">Project Address *</label>
+      <label for="address">Project Address *</label>
       <input type="text" name="address" id="address" required>
     </div>
 
@@ -259,7 +259,7 @@
         <!-- Desktop Version -->
         <span class="desktop-contact">
           <a href="mailto:fcfinishing1@gmail.com">
-            <img src="images/mail.svg" alt="Email Icon"> Email
+            <img src="images/mailWhite.svg" alt="Email Icon"> Email
           </a> |
           <a href="tel:8652087191">
             Call Us: 865-208-7191
@@ -268,10 +268,10 @@
         <!-- Mobile Version -->
         <div class="mobile-contact">
           <a href="mailto:fcfinishing1@gmail.com">
-            <img src="images/mail.svg" alt="Email Icon">
+            <img src="images/mailWhite.svg" alt="Email Icon">
           </a>
           <a href="tel:8652087191">
-            <img src="images/phone.svg" alt="Phone Icon">
+            <img src="images/phoneWhite.svg" alt="Phone Icon">
           </a>
         </div>
       </div>
@@ -281,6 +281,83 @@
     </div>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get references to the form and honeypot field
+      const form = document.getElementById('contact-form');
+      const honeypot = document.getElementById('honeypot');
+    
+      // Check if form and honeypot exist
+      if (!form || !honeypot) {
+        console.error('Form or honeypot field not found');
+        return;
+      }
+    
+      // Variable to store when the user starts filling the form
+      let formStartTime = null;
+    
+      // Function to display error messages
+      function displayError(message) {
+        let errorMsg = document.getElementById('error-message');
+        if (!errorMsg) {
+          errorMsg = document.createElement('div');
+          errorMsg.id = 'error-message';
+          errorMsg.style.color = 'red';
+          errorMsg.style.marginTop = '1em';
+          errorMsg.style.fontWeight = 'bold';
+          form.appendChild(errorMsg);
+        }
+        errorMsg.textContent = message;
+      }
+    
+      // Event listener for form submission
+      form.addEventListener('submit', function(event) {
+        // Clear previous error message
+        const errorMsg = document.getElementById('error-message');
+        if (errorMsg) {
+          errorMsg.textContent = '';
+        }
+    
+        // Check honeypot field
+        if (honeypot.value) {
+          event.preventDefault();
+          displayError('Spam detected. Please leave the hidden field empty.');
+          return;
+        }
+    
+        // Ensure formStartTime is set
+        if (!formStartTime) {
+          event.preventDefault();
+          displayError('Please fill out the form before submitting.');
+          return;
+        }
+    
+        // Check if at least 2 seconds have passed
+        const currentTime = new Date().getTime();
+        const timeElapsed = (currentTime - formStartTime) / 1000;
+        if (timeElapsed < 2) {
+          event.preventDefault();
+          displayError('Please take at least 2 seconds to fill out the form.');
+          return;
+        }
+    
+        // All checks passed; form will submit
+      });
+    
+      // Event listener for form fields to set formStartTime
+      const fields = form.querySelectorAll('input, textarea, select');
+      fields.forEach(function(field) {
+        field.addEventListener('input', function() {
+          if (!formStartTime) {
+            formStartTime = new Date().getTime();
+          }
+        });
+      });
+    });
+    </script>
+    
+  
+  
 </body>
 </html>
 
