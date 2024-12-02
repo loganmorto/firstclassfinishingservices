@@ -87,26 +87,27 @@ nav {
 
 .cta .btn {
   background-color: #333333;
+  color: #FFFFFF;
   padding: 10px 20px;
   width: max-content;
   display: block;
-  font-size: 1.2em;
-  color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(255, 130, 0, 0.5);
   text-decoration: none;
-  border: 1.5px solid rgba(255, 255, 255, 0.5); /* Subtle border */
-  border-radius: 8px;
+  background-color: transparent; /* Makes the background transparent */
+  border: 1.5px solid transparent; /* Border width */
+
+  background-image: linear-gradient(#FF8200, #ffaf59), /* For the border */
+                    linear-gradient(135deg, #FFE5B4, #FF8200); /* Button background */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   transition: all 0.3s ease;
-  /* Blurred and Darkened Background */
-  background: rgba(0, 0, 0, .75); /* Dark overlay */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Shadow effect */
+  border-radius: 8px;
 }
 
 
 .btn:hover {
   transform: scale(1.1);
-  background: rgba(0, 0, 0, 1); /* Dark overlay */
   transition: all 0.3s ease;
-  text-decoration: underline;
 }
 
 
@@ -236,8 +237,11 @@ nav {
   border: 1.5px solid rgba(255, 255, 255, 0.5); /* Subtle border */
   border-radius: 8px;
   transition: all 0.3s ease;
+
   /* Blurred and Darkened Background */
   background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  backdrop-filter: blur(10px); /* Applies blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
 
