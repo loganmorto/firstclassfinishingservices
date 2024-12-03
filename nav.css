@@ -1,36 +1,4 @@
-.navigation {
-    display: none; 
-    flex-direction: column;
-  }
 
-  .navigation.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: rgb(255 255 255 / 75%);
-    top: 100%;
-    right: 0;
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #FFFFFF;
-    z-index: 10;
-  }
-
-  /* Hide list items by default (when navigation is inactive) */
-.navigation ul li {
-  transform: translateX(100%);
-  opacity: 0;
-  margin: 1em 0;
-}
-
-
-
-/* When active, items will slide in with animation (triggered by JavaScript) */
-.navigation.active ul li {
-  transform: translateX(0);
-  padding: 0;
-  margin: 0;
-}
 
 /* Hamburger Button Styles */
 .hamburger {
@@ -67,6 +35,7 @@
     display: flex;
     gap: 15px;
     list-style: none;
+    width: max-content;
   }
   
   
@@ -144,16 +113,50 @@
   }
 
   /* Hide list items by default (when navigation is inactive) */
-.navigation ul li {
-  transform: translateX(100%);
-  opacity: 0;
-  margin: 1em 0;
-}
+    .navigation ul li {
+    transform: translateX(100%);
+    opacity: 0;
+    margin: 1em 0;
+    }
 
-/* When active, items will slide in with animation (triggered by JavaScript) */
-.navigation.active ul li {
-  transform: translateX(0);
-  padding: 0;
-  margin: 0;
-}
+    /* When active, items will slide in with animation (triggered by JavaScript) */
+    .navigation.active ul li {
+    transform: translateX(0);
+    padding: 0;
+    margin: 0;
+    }
+
+    .navigation {
+        display: none; 
+        flex-direction: column;
+      }
+    
+      .navigation.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(255 255 255 / 75%);
+        top: 100%;
+        right: 0;
+        text-align: center;
+        padding: 30px;
+        border-top: 1px solid #FFFFFF;
+        z-index: 10;
+      }
+    
+      /* Hide list items by default (when navigation is inactive) */
+    .navigation ul li {
+      transform: translateX(100%);
+      opacity: 0;
+      margin: 1em 0;
+    }
+    
+    
+    
+    /* When active, items will slide in with animation (triggered by JavaScript) */
+    .navigation.active ul li {
+      transform: translateX(0);
+      padding: 0;
+      margin: 0;
+    }
 }
