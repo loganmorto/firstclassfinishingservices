@@ -7,10 +7,11 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+    background-color: rgb(255 255 255 / 75%);
     top: 100%;
     right: 0;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     border-top: 1px solid #FFFFFF;
     z-index: 10;
   }
