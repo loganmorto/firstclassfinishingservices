@@ -542,6 +542,7 @@ background-color: white;
 }
 .faq-question {
   background-color: #f9f9f9;
+  color: #333;
   border: none;
   outline: none;
   padding: 1rem;
