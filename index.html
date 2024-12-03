@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Class Finishing LLC</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="icon" href="images/FCFSfavicon.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,6 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="faq.html">FAQ</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -83,7 +83,7 @@
 </section>
 <p class="banner-tag ">Proudly Serving the Greater Knoxville Region</p>
 <div class="warranty-clipping">
-<img src="images/warranty-clipping.svg" alt="All First Class Finishing services come with a 5 year warranty">
+<img src="images/warranty-clipping.svg" alt="All First Class Finishing services come with a 3 year warranty">
 <p>on all First Class Finishing services</p>
 </div>
 
@@ -149,6 +149,88 @@
   </div>
 </div>
 </section>
+
+<section class="faq">
+  <div class="faq-text">
+    <h2>Frequently Asked Questions</h2>
+    <p>Have questions about our services or processes? Here are some common questions we receive, along with detailed answers to help you understand how we work and what you can expect when partnering with First Class Finishing LLC.</p>
+  </div>
+  <div class="faq-accordion">
+
+    <div class="faq-item">
+      <button class="faq-question">What types of projects does First Class Finishing LLC specialize in?</button>
+      <div class="faq-answer">
+        <p>We specialize in contracting, commercial and residential painting, and bathtub and shower remodeling. Whether you need a complete home transformation or a small update, our team has the expertise to handle a wide range of projects with precision and care.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you offer free estimates?</button>
+      <div class="faq-answer">
+        <p>Yes, we provide free estimates for all projects. Give us a call or send us an email to schedule a consultation, and we’ll discuss your needs, assess your space, and provide a detailed estimate at no cost.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What is included in your 3-year warranty?</button>
+      <div class="faq-answer">
+        <p>Our 3-year warranty covers defects in workmanship and materials for projects completed by First Class Finishing LLC. It applies to the original property owner and excludes damage caused by neglect, misuse, natural disasters, or third-party alterations. For more details, please refer to our warranty terms.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do you minimize disruptions during a project?</button>
+      <div class="faq-answer">
+        <p>We understand the importance of maintaining your routine during a project. Our team works efficiently, keeps the workspace clean and organized, and schedules work at times that minimize inconvenience. For commercial projects, we’re happy to adjust our hours to accommodate your business operations.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you help with color and material selection?</button>
+      <div class="faq-answer">
+        <p>Absolutely! Our team can guide you in choosing the right colors, finishes, and materials to achieve your desired aesthetic and functionality. We ensure that every choice complements your space and meets your needs.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How long does a typical project take?</button>
+      <div class="faq-answer">
+        <p>The timeline for each project varies depending on its size and complexity. During the initial consultation, we provide an estimated timeline and keep you informed throughout the process to ensure you know what to expect.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do you provide services outside of Knoxville?</button>
+      <div class="faq-answer">
+        <p>Yes, we serve West Knoxville and surrounding areas within a 50-mile radius. If you’re located outside this area, please contact us to discuss your project and availability.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What kind of preparation do you do before starting a painting project?</button>
+      <div class="faq-answer">
+        <p>Before painting, we thoroughly prepare surfaces by cleaning, sanding, and patching any imperfections. For residential projects, we protect furniture and floors with coverings to ensure a clean and professional result.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can you handle custom bathtub and shower designs?</button>
+      <div class="faq-answer">
+        <p>Yes, we specialize in creating custom bathtub and shower designs that suit your style and needs. Whether you’re looking for a modern look or something more traditional, we work closely with you to bring your vision to life.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I schedule a consultation or service?</button>
+      <div class="faq-answer">
+        <p>Scheduling a consultation is easy! Just give us a call at 865-208-7191 or send us an email at <a href="mailto:fcfinishing1@gmail.com">firstclassfinishing1@gmail.com</a> Our team will follow up to confirm the details and prepare for your consultation.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 <section class="areas-served">
   <h3>First Class Finishing can handle your painting or remodel project in...</h3> 
@@ -240,6 +322,7 @@
   </form>
 </section>
 
+<!-- hiring section -->
 <section class="hiring">
   <h3>We are Hiring!</h3>
 <p style="font-weight: 500; font-size: 1.2em;">First Class Finishing is always looking for new additions to the team!</p>
@@ -288,6 +371,17 @@
     </div>
   </footer>
 
+  <!-- FAQ accordion toggle -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
+
+<!-- Contact Form -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Get references to the form and honeypot field
@@ -361,20 +455,30 @@
         });
       });
     });
-    </script>
-    
-  
-  
+    </script>  
 </body>
 </html>
 
 <script>
-  // Select the hamburger button and navigation menu
-  const hamburger = document.querySelector('.hamburger');
-  const navigation = document.querySelector('.navigation');
+const hamburger = document.querySelector('.hamburger')
+const navigation = document.querySelector('.navigation');
+const menuItems = document.querySelectorAll('.navigation ul li');
 
-  // Toggle the navigation menu when the hamburger button is clicked
-  hamburger.addEventListener('click', () => {
-    navigation.classList.toggle('active');
-  });
+hamburger.addEventListener('click', () => {
+  navigation.classList.toggle('active');
+
+  if (navigation.classList.contains('active')) {
+    menuItems.forEach((item, index) => {
+      item.style.animation = `slideIn 0.5s ease forwards ${index * 0.1}s`;
+    });
+  } else {
+    menuItems.forEach(item => {
+      // Delay hiding items to allow animation to finish
+      item.style.animation = `slideOut 0.3s ease forwards`;
+      setTimeout(() => {
+        item.style.animation = ''; // Reset animation after it completes
+      }, 300);
+    });
+  }
+});
 </script>

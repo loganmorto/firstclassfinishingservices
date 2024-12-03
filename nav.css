@@ -1,0 +1,168 @@
+.navigation {
+    display: none; 
+    flex-direction: column;
+  }
+
+  .navigation.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+    z-index: 10;
+  }
+
+  /* Hide list items by default (when navigation is inactive) */
+.navigation ul li {
+  transform: translateX(100%);
+  opacity: 0;
+  margin: 1em 0;
+}
+
+
+
+/* When active, items will slide in with animation (triggered by JavaScript) */
+.navigation.active ul li {
+  transform: translateX(0);
+  padding: 0;
+  margin: 0;
+}
+
+/* Hamburger Button Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: .5rem;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Navigation Menu - Hidden by Default on Mobile */
+  .navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: .5rem;
+  }
+  
+  .navigation ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  
+  
+  .navigation ul li {
+    margin: 10px 0;
+  }
+  
+  .navigation a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Keyframes for sliding animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+
+
+  
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  
+  .navigation ul {
+    display: grid;
+    gap: 1em;
+  }
+
+  .navigation a {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 12px;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .navigation {
+    display: none; 
+    flex-direction: column;
+  }
+
+  .navigation.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+    z-index: 10;
+  }
+
+  /* Hide list items by default (when navigation is inactive) */
+.navigation ul li {
+  transform: translateX(100%);
+  opacity: 0;
+  margin: 1em 0;
+}
+
+/* When active, items will slide in with animation (triggered by JavaScript) */
+.navigation.active ul li {
+  transform: translateX(0);
+  padding: 0;
+  margin: 0;
+}
+}

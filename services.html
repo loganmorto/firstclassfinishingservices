@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>First Class Finishing LLC</title>
   <link rel="stylesheet" href="servicesstyles.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="icon" href="images/FCFSfavicon.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +114,7 @@
         <div class="service-item-container warranty">
           <h3 class="service-h3">Why Choose Us?</h3>
         </div>
-        <p class="service-text">At First Class Finishing LLC, we understand that your home or business is one of your most valuable investments. That’s why we go above and beyond to deliver superior results, backed by our comprehensive 5-year warranty. This warranty demonstrates our commitment to quality and your satisfaction. With our customer-focused approach and attention to detail, you can trust us to handle your project with the care and professionalism it deserves.</p>
+        <p class="service-text">At First Class Finishing LLC, we understand that your home or business is one of your most valuable investments. That’s why we go above and beyond to deliver superior results, backed by our comprehensive 3-year warranty. This warranty demonstrates our commitment to quality and your satisfaction. With our customer-focused approach and attention to detail, you can trust us to handle your project with the care and professionalism it deserves.</p>
       </div>
   
     </div>
@@ -331,12 +332,25 @@
 </html>
 
 <script>
-  // Select the hamburger button and navigation menu
-  const hamburger = document.querySelector('.hamburger');
-  const navigation = document.querySelector('.navigation');
-
-  // Toggle the navigation menu when the hamburger button is clicked
-  hamburger.addEventListener('click', () => {
-    navigation.classList.toggle('active');
-  });
-</script>
+    const hamburger = document.querySelector('.hamburger')
+    const navigation = document.querySelector('.navigation');
+    const menuItems = document.querySelectorAll('.navigation ul li');
+    
+    hamburger.addEventListener('click', () => {
+      navigation.classList.toggle('active');
+    
+      if (navigation.classList.contains('active')) {
+        menuItems.forEach((item, index) => {
+          item.style.animation = `slideIn 0.5s ease forwards ${index * 0.1}s`;
+        });
+      } else {
+        menuItems.forEach(item => {
+          // Delay hiding items to allow animation to finish
+          item.style.animation = `slideOut 0.3s ease forwards`;
+          setTimeout(() => {
+            item.style.animation = ''; // Reset animation after it completes
+          }, 300);
+        });
+      }
+    });
+    </script>
