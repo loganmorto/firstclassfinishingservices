@@ -283,7 +283,7 @@ section p {
 
 section .btn {
   transition: all 0.3s ease;
-  background-color: ghostwhite;
+  background-color: white;
   text-align: center;
   display: flex;
   justify-content: center;
